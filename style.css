@@ -6,55 +6,60 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
 body{
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
 }
 .cal{
-    width: 400px;
-    margin: 100px auto;
     background-color: black;
     border:0.5px solid white;
+    padding: 2%;
     border-radius: 20px;
 }
 .display{
     color: white;
     text-align: right;
     font-size: larger;
-    padding: 20px;
-    border:0.5px solid white;
+    padding: 5%;
+    margin-bottom: 5%;
     border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px gray;
 }
 .keypad{
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
 
 }
 .key{
-    width: 90px;
-    height: 45px;
-    border: 1px solid orange;
+    width: 50px;
+    /* border: 1px solid orange; */
     border-radius: 10px;
-    padding: 10px;
-    margin: 1px;
+    padding: 10%;
+    margin: 1%;
+    box-shadow: 1px 1px 1px 1px orange;
 }
 .key:active{
-    background-color: gray;
+    background-color: gold;
+    color: black;
 }
 .keypad-table tr:first-child .key{
     background-color: orange;
     color: black;
+    box-shadow: 1px 1px 1px 1px gray;
 }
 .keypad-table tr:first-child .key:active{
-    background-color: gray;
+    background-color: gold;
 }
 .keypad-table tr td:last-child .key{
     background-color: orange;
     color: black;
+    box-shadow: 1px 1px 1px 1px gray;
 }    
 .keypad-table tr td:last-child .key:active{
-    background-color: gray;
+    background-color: gold;
 }
